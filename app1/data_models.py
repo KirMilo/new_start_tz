@@ -20,8 +20,8 @@ class Data(BaseModel):
         elif isinstance(v, str):
             return datetime.fromisoformat(v)
         else:
-            raise ValueError(
-                f"field_dt must be one of the allowed types: datetime or str(isoformat). But it's {type(v)}",
+            raise TypeError(
+                f"field_dt must be one of the allowed types: datetime or str(isoformat). Received {type(v)}",
             )
 
 
