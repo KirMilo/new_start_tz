@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Django app</title>
+    <link rel="stylesheet" href="{% static 'items/css/styles.css' %}">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="{% static 'items/js/items.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Items list from restful-api.dev:</h1>
+
+        <div class="controls">
+
+        </div>
+
+        <table id="items-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th data-sort="price">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Дополнительные строки  -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
